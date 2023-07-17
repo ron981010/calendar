@@ -24,7 +24,27 @@ function openModal(date) {
   backDrop.style.display = 'block';
 }
 
-function load() {
+async function loadEventsFromFile() {
+  try {
+    const response = await fetch('events.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching events data:', error);
+    return [];
+  }
+}
+
+async function load() {
+  // Load events from the JSON file
+  const eventsFromFile = await loadEventsFromFile();
+
+  // Merge events from the file with the manually added events
+  events = [...events, ...eventsFromFile];
+
   const dt = new Date();
 
   if (nav !== 0) {
@@ -113,6 +133,17 @@ function deleteEvent() {
   closeModal();
 }
 
+async function addEventsFromJSONFile() {
+  try {
+    const eventsFromFile = await loadEventsFromFile();
+    events = [...events, ...eventsFromFile];
+    localStorage.setItem('events', JSON.stringify(events));
+    closeModal();
+  } catch (error) {
+    console.error('Error adding events from JSON file:', error);
+  }
+}
+
 function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
@@ -128,6 +159,7 @@ function initButtons() {
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
   document.getElementById('closeButton').addEventListener('click', closeModal);
+  document.getElementById('addEventButton').addEventListener('click', addEventsFromJSONFile);
 }
 
 initButtons();
