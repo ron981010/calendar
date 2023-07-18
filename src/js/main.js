@@ -127,11 +127,32 @@ function saveEvent() {
   }
 }
 
-function deleteEvent() {
+async function deleteEvent() {
+  const eventToDelete = events.find(e => e.date === clicked);
+  if (!eventToDelete) {
+    return; // Event not found, nothing to delete
+  }
+
   events = events.filter(e => e.date !== clicked);
   localStorage.setItem('events', JSON.stringify(events));
+
+  try {
+    // Update events in the JSON file on the server
+    await fetch('events.json', {
+      method: 'DELETE', // Use DELETE request to delete the event from the file
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ date: clicked }), // Send the date of the event to be deleted in the request body
+    });
+    console.log('Event successfully deleted on the server.');
+  } catch (error) {
+    console.error('Error deleting event on the server:', error);
+  }
+
   closeModal();
 }
+
 
 async function addEventsFromJSONFile() {
   try {
