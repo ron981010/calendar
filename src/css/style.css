@@ -13,8 +13,35 @@ button {
   padding: 5px;
   border-radius: 5px;
   color: #f2fbe0;
+  transition: 0.6s;
 }
 
+button:before, button:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  overflow: hidden;
+  transition: 0.6s;
+}
+button:before{
+  width: 10px;
+  background: rgba(169, 178, 255, 0.212);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:after{
+  width: 05px;
+  background: rgba(169, 178, 255, 0.212);
+  transform: translateX(-130px) skewX(-45deg);
+}
+button:hover:before,
+button:hover:after{
+  opacity: 0.6;
+  transform: translateX(320px) skewX(-45deg);
+}
 #header {
   padding: 10px;
   color: #f2fbe0;
