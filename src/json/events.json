@@ -1,10 +1,92 @@
 [
   {
-    "date": "7/3/2023",
-    "title": "HOme evening"
+    "date": "7/15/2023",
+    "title": "Company Anniversary Celebration",
+    "description": "Celebrating the Xth anniversary of our tech company with an all-hands meeting, awards, and team-building activities.",
+    "time": "12:00"
   },
   {
-    "date": "7/1/2023",
-    "title": "weekly plan"
+    "date": "8/1/2023",
+    "title": "Product Launch: XYZ Tech v2.0",
+    "description": "Launching the highly anticipated version 2.0 of our flagship product, XYZ Tech. Exciting new features await our users!",
+    "time": "13:00"
+  },
+  {
+    "date": "9/5/2023",
+    "title": "Tech Conference: InnovateTech 2023",
+    "description": "Participating in the InnovateTech conference, a key event for our industry. Our team will showcase new technologies and insights.",
+    "time": "09:00"
+  },
+  {
+    "date": "10/10/2023",
+    "title": "Holiday: Columbus Day",
+    "description": "The company will be closed to observe the Columbus Day holiday. Enjoy your day off!",
+    "time": "12:00"
+  },
+  {
+    "date": "10/31/2023",
+    "title": "Halloween Party & Costume Contest",
+    "description": "Get ready for our spooky Halloween party! Dress up in your best costumes and compete for awesome prizes!",
+    "time": "12:00"
+  },
+  {
+    "date": "11/15/2023",
+    "title": "Tech Talk: AI & Machine Learning",
+    "description": "Hosting a tech talk on AI and machine learning trends. Industry experts will share their insights and expertise.",
+    "time": "12:00"
+  },
+  {
+    "date": "11/23/2023",
+    "title": "Holiday: Thanksgiving",
+    "description": "Wishing everyone a wonderful Thanksgiving! The company will be closed for the holiday.",
+    "time": "12:00"
+  },
+  {
+    "date": "12/15/2023",
+    "title": "End-of-Year Party",
+    "description": "Join us for the annual end-of-year party as we celebrate our achievements and look forward to the new year!",
+    "time": "12:00"
+  },
+  {
+    "date": "12/24/2023",
+    "title": "Holiday: Christmas Eve",
+    "description": "The company will be closed for Christmas Eve. Spend quality time with your loved ones!",
+    "time": "12:00"
+  },
+  {
+    "date": "12/25/2023",
+    "title": "Holiday: Christmas Day",
+    "description": "Merry Christmas! The company will be closed for Christmas Day.",
+    "time": "12:00"
+  },
+  {
+    "date": "12/31/2023",
+    "title": "Holiday: New Year's Eve",
+    "description": "Wishing you a fantastic New Year's Eve celebration! The company will be closed to ring in the new year.",
+    "time": "12:00"
+  },
+  {
+    "date": "1/1/2024",
+    "title": "Holiday: New Year's Day",
+    "description": "Happy New Year! The company will be closed for New Year's Day.",
+    "time": "12:00"
+  },
+  {
+    "date": "1/15/2024",
+    "title": "Team Building Retreat",
+    "description": "Start the year with a team-building retreat. Engaging activities and workshops await!",
+    "time": "12:00"
+  },
+  {
+    "date": "2/14/2024",
+    "title": "Tech Workshop: Cybersecurity",
+    "description": "Hosting a workshop on cybersecurity to enhance our team's knowledge and reinforce best practices.",
+    "time": "12:00"
+  },
+  {
+    "date": "2/28/2024",
+    "title": "Tech Talk: Future of Technology",
+    "description": "Exploring the future of technology with thought-provoking discussions and presentations from our tech leaders.",
+    "time": "12:00"
   }
 ]

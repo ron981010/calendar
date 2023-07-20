@@ -1,10 +1,82 @@
 [
   {
     "date": "7/3/2023",
-    "title": "HOme evening"
+    "title": "Home evening"
   },
   {
     "date": "7/1/2023",
-    "title": "weekly plan"
+    "title": "Weekly plan"
+  },
+  {
+    "date": "7/15/2023",
+    "title": "John's Birthday"
+  },
+  {
+    "date": "8/10/2023",
+    "title": "Family picnic"
+  },
+  {
+    "date": "8/22/2023",
+    "title": "Doctor's appointment"
+  },
+  {
+    "date": "9/5/2023",
+    "title": "Presentation at work"
+  },
+  {
+    "date": "9/20/2023",
+    "title": "Anniversary celebration"
+  },
+  {
+    "date": "10/3/2023",
+    "title": "Dentist appointment"
+  },
+  {
+    "date": "10/18/2023",
+    "title": "Friend's wedding"
+  },
+  {
+    "date": "11/2/2023",
+    "title": "Important project deadline"
+  },
+  {
+    "date": "11/15/2023",
+    "title": "Parent-Teacher meeting"
+  },
+  {
+    "date": "11/25/2023",
+    "title": "Black Friday shopping"
+  },
+  {
+    "date": "12/5/2023",
+    "title": "Sister's Birthday"
+  },
+  {
+    "date": "12/20/2023",
+    "title": "Company holiday party"
+  },
+  {
+    "date": "12/24/2023",
+    "title": "Christmas Eve dinner"
+  },
+  {
+    "date": "12/31/2023",
+    "title": "New Year's Eve celebration"
+  },
+  {
+    "date": "1/10/2024",
+    "title": "Vacation planning"
+  },
+  {
+    "date": "1/20/2024",
+    "title": "Doctor's appointment"
+  },
+  {
+    "date": "2/14/2024",
+    "title": "Valentine's Day"
+  },
+  {
+    "date": "2/28/2024",
+    "title": "Friend's Birthday"
   }
 ]

@@ -1,3 +1,4 @@
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -165,6 +166,10 @@ async function addEventsFromJSONFile() {
   }
 }
 
+function redirectToMongoDB() {
+  window.location.href = 'src/pages/login.html'; 
+}
+
 function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
@@ -181,6 +186,7 @@ function initButtons() {
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
   document.getElementById('closeButton').addEventListener('click', closeModal);
   document.getElementById('addEventButton').addEventListener('click', addEventsFromJSONFile);
+  document.getElementById('addEventMongoButton').addEventListener('click', redirectToMongoDB); 
 }
 
 initButtons();
